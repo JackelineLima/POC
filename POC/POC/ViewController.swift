@@ -26,13 +26,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(titleLabel)
-        view.addSubview(titleCampaignLabel)
+        
         
         titleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 32).isActive = true
         titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
-        titleCampaignLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 32).isActive = true
-        titleCampaignLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        if FeatureToggleImplementation.shared.enableCampaign {
+            view.addSubview(titleCampaignLabel)
+            titleCampaignLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 32).isActive = true
+            titleCampaignLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        }
     }
 }
 

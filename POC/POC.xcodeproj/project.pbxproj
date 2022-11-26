@@ -79,6 +79,8 @@
 		37A3CD2C2932534A0030FB6F /* POC */ = {
 			isa = PBXGroup;
 			children = (
+				37A3CD542932C8810030FB6F /* Firebase */,
+				37A3CD532932C86D0030FB6F /* FeatureToggle */,
 				37A3CD4A293257820030FB6F /* RemoteConfig */,
 				37A3CD47293255640030FB6F /* UserDefaults */,
 				37A3CD2D2932534A0030FB6F /* AppDelegate.swift */,
@@ -105,13 +107,27 @@
 		37A3CD4A293257820030FB6F /* RemoteConfig */ = {
 			isa = PBXGroup;
 			children = (
-				37A3CD4F293268C60030FB6F /* FirebaseUtil.swift */,
-				37A3CD41293253720030FB6F /* FeatureToggle.swift */,
 				37A3CD48293257700030FB6F /* RemoteConfig.swift */,
 				37A3CD4D293268A10030FB6F /* RemoteConfigClient.swift */,
-				37A3CD51293268EA0030FB6F /* FeatureFlag.swift */,
 			);
 			path = RemoteConfig;
+			sourceTree = "<group>";
+		};
+		37A3CD532932C86D0030FB6F /* FeatureToggle */ = {
+			isa = PBXGroup;
+			children = (
+				37A3CD41293253720030FB6F /* FeatureToggle.swift */,
+				37A3CD51293268EA0030FB6F /* FeatureFlag.swift */,
+			);
+			path = FeatureToggle;
+			sourceTree = "<group>";
+		};
+		37A3CD542932C8810030FB6F /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				37A3CD4F293268C60030FB6F /* FirebaseUtil.swift */,
+			);
+			path = Firebase;
 			sourceTree = "<group>";
 		};
 		5FDCBAD5B9579C02CDF69601 /* Pods */ = {
