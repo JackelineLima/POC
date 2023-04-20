@@ -21,7 +21,7 @@ public class UserDefaultableImplementation: UserDefaultable {
     
     private init () {}
     
-    @UserDefaultsWrapper(key: UserDefaultsKeys.userName, defaultValue: nil)
-    public var userName: String?
+    @UserDefaultsWrapper(key: UserDefaultsKeys.userName, defaultValue: "")
+    public var userName: String
 }
 
